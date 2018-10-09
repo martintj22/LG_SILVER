@@ -68,7 +68,7 @@ while{taskrunning  && myjob == "TrashMan" } do {
 			if(((playertasks select 0) select 1) == "bin") then {
 				["bin"] spawn client_fnc_collectGarbage;
 				_warnings = 0;
-				paycheck = paycheck + 130;
+				paycheck = paycheck + 200;
 				playertasks deleteat 0;
 				_garbagelevel = _garbagelevel + 1;
 
