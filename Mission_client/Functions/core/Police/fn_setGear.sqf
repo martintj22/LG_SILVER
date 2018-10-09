@@ -31,6 +31,16 @@ if(_type == "water") exitwith {
 	player addmagazine "20Rnd_556x45_UW_mag";
 };
 
+if(_type == "emspilot") exitwith {
+	player adduniform "RF_EMS_1";
+	player addheadgear "H_PilotHelmetHeli_B";
+};
+
+if(_type == "coppilot") exitwith {
+	player adduniform "RF_WING_3";
+	player addheadgear "H_PilotHelmetHeli_B";
+};
+
 
 
 lastGovtUseWeapon = time + 1200;

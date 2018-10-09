@@ -453,7 +453,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget getVariable['dead',FALSE] && (myjob == 'EMS' || myJob == 'Fire')"],
-		["Revive Person", "['Reviving',15,'client_fnc_sendRevive',player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,'cg_mission_files\sounds\defib.ogg'] spawn client_fnc_dotask",1]
+		["Revive Person", "['Reviving',15,'client_fnc_sendRevive',player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,'cg_mission_files\sounds\patdown1.ogg'] spawn client_fnc_dotask",1]
 	],
 
 	[
@@ -474,21 +474,6 @@ NoPixel_InteractionMenuItems = [
 	[
 		["bedactive"],
 		["Drop Bed", "[] spawn client_fnc_dropbed;",1]
-	],
-
-	[
-		[" typeof cursorobject == 'A3L_HospitalBed2015' && myjob == 'EMS'"],
-		["Pickup Bed", "[true] spawn client_fnc_spawnbed;",1]
-	],
-
-	[
-		[" typeof cursorobject == 'A3L_HospitalBed2015' && myjob == 'EMS'"],
-		["Remove Bed", "deletevehicle currentcursortarget;",1]
-	],
-
-	[
-		[" typeof cursorobject == 'Land_buildingshospital1' && myjob == 'EMS'"],
-		["Spawn Bed", "[false] spawn client_fnc_spawnbed;",1]
 	],
 
 
@@ -1310,7 +1295,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myJob IN ['Cop'] && typeof cursorobject == 'Land_PoliceStation' && (player getVariable 'cop' == 10 || 10 IN licenseArray || 11 IN licenseArray)"],
-		["Scuba Gear", "['water'] spawn client_fnc_setGear",4]
+		["Diving Gear", "['water'] spawn client_fnc_setGear",4]
+	],
+	
+	[
+		[" myJob IN ['Cop'] && typeof cursorobject == 'Land_PoliceStation' && (player getVariable 'cop' == 10 || 12 IN licenseArray || 13 IN licenseArray)"],
+		["Cop Pilot", "['coppilot'] spawn client_fnc_setGear",4]
 	],
 
 	[
@@ -1326,6 +1316,11 @@ NoPixel_InteractionMenuItems = [
 	[
 		[" myJob == 'EMS' && (typeof cursorobject IN ['Land_buildingsfiredept1']) && (player getVariable 'EMS' == 10 || 25 IN licenseArray || 26 IN licenseArray)"],
 		["Diving gear", "['Mwater'] spawn client_fnc_setGear",4]
+	],
+	
+	[
+		[" myJob == 'EMS' && (typeof cursorobject IN ['Land_buildingsfiredept1']) && (player getVariable 'EMS' == 10 || 23 IN licenseArray || 24 IN licenseArray)"],
+		["EMS Pilot", "['emspilot'] spawn client_fnc_setGear",4]
 	],
 
 	[
@@ -1632,8 +1627,3 @@ NoPixel_InteractionMenuItems = [
 ];
 
 player setVariable["loaded", 2, false];
-
-
-
-
-
