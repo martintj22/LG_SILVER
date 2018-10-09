@@ -260,19 +260,6 @@ if (isServer) then {
 
 };
 
-_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
-
-if (!(_TFenabled)) then {
-
-    while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do {
-
-        titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
-        sleep 2;
-        if (player getvariable "taskfr") then {
-        player setvariable ["taskfr",false,true];
-        };
-    };
-};
 // TeamSpeak 
 Dvid_TFEnabled = true;
 Dvid_onTsServer = "Life-Gaming" == (call TFAR_fnc_getTeamSpeakServerName); ///////////////////////Edit This line (the channel at the top of your TS (where you right click and "Edit Virtual Server"), yes, get the name of that goes here)
@@ -284,8 +271,8 @@ titleText ["Task Force Radio loaded succesfully","BLACK IN"];
     while {true} do {
 
                 _isadmin = false;
-                if (!(isNil "kacfocus")) then {
-                    _adminlvl = kacfocus call BIS_fnc_parseNumber;
+                if (!(isNil "adminLevel")) then {
+                    _adminlvl = adminLevel call BIS_fnc_parseNumber;
 
                     if (_adminlvl > 0) then {
                         _isadmin = true;
