@@ -1,5 +1,4 @@
 enableSaving [false, false];
-//test
 if (isServer) then {
 	["rpframework", "SQL_CUSTOM", "rpframework.ini"] spawn ExternalS_fnc_ExtDBinit;
 	safetyloot = true;
