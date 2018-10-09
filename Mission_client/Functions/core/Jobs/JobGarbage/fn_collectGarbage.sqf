@@ -60,7 +60,7 @@ if(mybin distance (vehicle player) < 25 && _type == "bin") then {
 
 
 
-	paycheck = paycheck + 35;
+	paycheck = paycheck + 120;
 
 	if(_veh == player) exitwith {};
 		
