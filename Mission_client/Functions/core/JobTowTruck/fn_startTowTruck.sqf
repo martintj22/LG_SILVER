@@ -24,7 +24,7 @@ if(!taskrunning) then {
 
 				if(player distance ((playertasks select 0) select 0) < 15) then {
 					["You have arrived at your location!", true] spawn domsg;
-					paycheck = paycheck + 30;
+					paycheck = paycheck + 120;
 					playertasks deleteat 0;
 					uisleep 3;
 					deletemarkerlocal format["job%1",getPlayerUID player];
