@@ -66,7 +66,7 @@ if(myjob == "Cop") then {
 	};	
 
 	if(_level == 9) then { 
-		player forceAddUniform "U_007_US_Police_officer";
+		player forceAddUniform "silver_lake_fbi";
 		player addHeadgear "H_007_policecap";
 	};	
 
