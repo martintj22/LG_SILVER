@@ -76,6 +76,15 @@ if((_this select 0) == 1) exitwith {
 		lastGovtUseCar = time + 1200;
 	};
 
+	if(myJob == "EMS") then {
+		_cost = 50;
+		_vehicle setVariable ["emsCar", format["UNIT %1%2", player getVariable "badgeNumber", selectRandom _random], true];
+	};
+
+	if( typeOf _vehicle in ["B_UAV_01_F","B_Static_Designator_01_F"] ) then { 
+		createVehicleCrew _vehicle; 
+	};
+
 	if( _vehicle isKindOf "Car") then {
 		_vehicle addItemCargoGlobal ["CG_wheel", 3];
 		
