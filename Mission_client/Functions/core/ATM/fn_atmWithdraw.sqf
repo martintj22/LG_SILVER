@@ -113,8 +113,7 @@ if(_bankType == 4) then {
 
 	[player, "casinoVault"] remoteExec ["client_fnc_getremotevar",2];
 	waitUntil { !isNil "packet"; };
-	
-	if ( true ) exitWith { ["You cannot withdraw money from the vault.", true] spawn domsg; };
+	if ( player getVariable "mobsterBank" <= 6 )
 		if (_amount <= packet) then 
 		{
 			
