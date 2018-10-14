@@ -32,6 +32,12 @@ if (_jobType == "Mobster") exitwith {
 	current_cars pushback vehspawned; uisleep 1;
 };
 
+if (_jobType == "DMV") exitwith {
+	vehspawned = createVehicle ["VVV_Alfa_Romeo_59", [0,0,(random(500) + 3)], [], 0, "NONE"];	
+	[vehspawned] spawn client_fnc_spawnvehicle;
+	current_cars pushback vehspawned; uisleep 1;
+};
+
 if (_jobType == "Biker") exitwith {
 	vehspawned = createVehicle ["Acj_Harley_Davidson_Sons_Of_Anarchy", [0,0,(random(500) + 3)], [], 0, "NONE"];	
 	[vehspawned] spawn client_fnc_spawnvehicle;
@@ -50,9 +56,9 @@ if (_jobType == "Wood Logging") exitwith {
 if (_jobType == "mail") exitwith {
 
 	_level_check = (client_level_array select 1);
-	if(_level_check > -1 && _level_check < 300) then { vehspawned = createVehicle ["nopixel_fedex", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
-	if(_level_check > 299 && _level_check < 600) then { vehspawned = createVehicle ["nopixel_fedex_1", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
-	if(_level_check > 599) then { vehspawned = createVehicle ["nopixel_fedex_2", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > -1 && _level_check < 300) then { vehspawned = createVehicle ["VVV_Fortransi_civ", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > 299 && _level_check < 600) then { vehspawned = createVehicle ["VVV_Fortransi_civ_1", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > 599) then { vehspawned = createVehicle ["VVV_Fortransi_civ_2", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
 
 
 	[vehspawned] spawn client_fnc_spawnvehicle;
@@ -72,9 +78,9 @@ if (_jobType == "trashman") exitwith {
 if (_jobType == "repairman") exitwith {	
 
 	_level_check = (client_level_array select 7);
-	if(_level_check > -1 && _level_check < 300) then { vehspawned = createVehicle ["nopixel_mrfixit", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
-	if(_level_check > 299 && _level_check < 600) then { vehspawned = createVehicle ["nopixel_mrfixit_1", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
-	if(_level_check > 599) then { vehspawned = createVehicle ["nopixel_mrfixit_2", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > -1 && _level_check < 300) then { vehspawned = createVehicle ["VVV_Fortransi_civ", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > 299 && _level_check < 600) then { vehspawned = createVehicle ["VVV_Fortransi_civ_1", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > 599) then { vehspawned = createVehicle ["VVV_Fortransi_civ_2", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
 
 	[vehspawned, ["white","Glossy"]] spawn client_fnc_initVehicle;
 	[vehspawned] spawn client_fnc_spawnvehicle;	
@@ -114,9 +120,9 @@ if (_jobType == "towtruck") exitwith {
 if (_jobType == "NewsMan") exitwith {	
 
 	_level_check = (client_level_array select 6);
-	if(_level_check > -1 && _level_check < 300) then { vehspawned = createVehicle ["nopixel_news_van_original", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
-	if(_level_check > 299 && _level_check < 600) then { vehspawned = createVehicle ["nopixel_news_van_original_1", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
-	if(_level_check > 599) then { vehspawned = createVehicle ["nopixel_news_van_original_2", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > -1 && _level_check < 300) then { vehspawned = createVehicle ["VVV_Fortransi_civ", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > 299 && _level_check < 600) then { vehspawned = createVehicle ["VVV_Fortransi_civ_1", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
+	if(_level_check > 599) then { vehspawned = createVehicle ["VVV_Fortransi_civ_2", [0,0,(random(500) + 3)], [], 0, "NONE"]; };
 
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	clearmagazinecargoGlobal (vehspawned);

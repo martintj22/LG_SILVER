@@ -40,7 +40,7 @@ if (_amount > 0) then
 		[player, "mafiaBank"] remoteExec ["client_fnc_getremotevar",2];
 		waitUntil { !isNil "packet"; };
 
-		if ( player getVariable "Mafia" <= 7 ) exitWith { ["You must be at least rank 8 to withdraw.", true] spawn domsg; };
+		if ( player getVariable "Mafia" <= 7 ) exitWith { ["You must be at least rank 7 to withdraw.", true] spawn domsg; };
 		if (_amount <= packet) then 
 		{
 			
@@ -64,7 +64,8 @@ if (_amount > 0) then
 
 		[player, "mafiaBank"] remoteExec ["client_fnc_getremotevar",2];
 		waitUntil { !isNil "packet"; };
-
+		
+		if ( player getVariable "mafia" <= 7 ) exitWith { ["You must be at least rank 7 to withdraw.", true] spawn domsg; };
 		if (_amount <= packet) then 
 		{
 			
@@ -89,7 +90,7 @@ if (_amount > 0) then
 		[player, "bikerBank"] remoteExec ["client_fnc_getremotevar",2];
 		waitUntil { !isNil "packet"; };
 
-		if ( player getVariable "Biker" <= 7 ) exitWith { ["You must be at least rank 8 to withdraw.", true] spawn domsg; };
+		if ( player getVariable "Biker" <= 7 ) exitWith { ["You must be at least rank 7 to withdraw.", true] spawn domsg; };
 		if (_amount <= packet) then 
 		{
 			
@@ -113,7 +114,8 @@ if(_bankType == 4) then {
 
 	[player, "casinoVault"] remoteExec ["client_fnc_getremotevar",2];
 	waitUntil { !isNil "packet"; };
-	if ( player getVariable "mobsterBank" <= 6 )
+		
+		if ( player getVariable "Mobster" <= 6 ) exitWith { ["You must be at least rank 6 to withdraw.", true] spawn domsg; };
 		if (_amount <= packet) then 
 		{
 			
@@ -186,5 +188,3 @@ if(_bankType == 4) then {
 	["Withdrawal amount must be more than $0.00!", true] spawn domsg;
 	
 };
-
-

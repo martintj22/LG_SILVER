@@ -248,6 +248,15 @@ else then {
 	_garage pushback "nopixel_GMC_Campervan";
 };
 
+if(myJob == "DMV") then {
+	_garage pushback "VVV_Alfa_Romeo_59";
+	_garage pushback "VVV_Chevrolet_Impala";
+
+	if(player getvariable "DMV" >= 6) then { 
+	_garage pushback "ivory_r8_spyder";
+	};
+};
+
 {
 	_class = _x;
 	_vehicleName = [_x] call Client_fnc_getVehicleName; 

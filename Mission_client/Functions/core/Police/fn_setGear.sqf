@@ -17,7 +17,7 @@ if(_type == "uav") exitwith {
 };
 
 if(_type == "mwater") exitwith {
-	player adduniform "U_B_Wetsuit";
+	player adduniform "CG_EMS9";
 	player addGoggles "G_B_Diving";
 	player addvest "V_RebreatherB";
 };
@@ -38,10 +38,8 @@ if(_type == "emspilot") exitwith {
 
 if(_type == "coppilot") exitwith {
 	player adduniform "RF_WING_3";
-	player addheadgear "H_PilotHelmetHeli_B";
+	player addheadgear "wing_helmet";
 };
-
-
 
 lastGovtUseWeapon = time + 1200;
 
@@ -66,8 +64,7 @@ if(myjob == "Cop") then {
 	};	
 
 	if(_level == 9) then { 
-		player forceAddUniform "silver_lake_fbi";
-		player addHeadgear "H_007_policecap";
+		player forceAddUniform "vvv_traje_policia_1";
 	};	
 
 	// patrol bureau
@@ -155,16 +152,16 @@ if(myjob == "Cop") then {
 
 		} else { 
 			if(_level == 1) then {
-				player forceAddUniform "silver_lake_statepolice";
-				player addHeadgear "AM_PatrolHat"; 
+				player forceAddUniform "silver_lake_police";
+				player addHeadgear "AM_PatrolHat";
 			};
 			if(_level == 2) then {
-				player forceAddUniform "silver_lake_statepolice";
+				player forceAddUniform "silver_lake_police";
 				player addHeadgear "AM_PatrolHat"; 
 			};
 			if(_level == 3) then {
 				player forceadduniform "silver_lake_police"; 
-				player addHeadgear "Campaign_Hat_Light"; 
+				player addHeadgear "AM_PatrolHat"; 
 			};
 			if(_level == 4) then {			
 				player forceadduniform "silver_lake_police"; 
@@ -182,15 +179,15 @@ if(myjob == "Cop") then {
 			};
 			if(_level == 6) then {	
 				player forceadduniform "silver_lake_police"; 
-				player addHeadgear "AM_PatrolHat"; 
+				player addHeadgear "H_007_policecap"; 
 			};
 			if(_level == 7) then {		
-				player forceAddUniform "silver_lake_fbi";
-				player addHeadgear "AM_PatrolHat"; 
+				player forceAddUniform "silver_lake_police";
+				player addHeadgear "H_007_policecap"; 
 			};
 			if(_level == 8) then {
-				player forceAddUniform "silver_lake_fbi";
-				player addHeadgear "AM_PatrolHat"; 
+				player forceAddUniform "vvv_traje_policia_2";
+				player addHeadgear "H_007_policecap"; 
 			};
 			
 		};
@@ -276,35 +273,39 @@ if(myjob == "Cop") then {
 		} else { 
 			if(_level == 1) then {
 				player forceAddUniform "silver_lake_statepolice";
+				player addHeadgear "A3L_sargehat";
 			};
 			if(_level == 2) then {
 				player forceAddUniform "silver_lake_statepolice";
+				player addHeadgear "A3L_sargehat";
 			};
 			if(_level == 3) then {
-				player forceAddUniform "silver_lake_police";
-				player addHeadgear "Campaign_Hat_Dark"; 
+				player forceAddUniform "silver_lake_statepolice";
+				player addHeadgear "A3L_sargehat"; 
 			};
 			if(_level == 4) then {	
-				player forceAddUniform "silver_lake_police";
-				player addHeadgear "Campaign_Hat_Dark"; 
+				player forceAddUniform "silver_lake_statepolice";
+				player addHeadgear "A3L_sargehat"; 
 			};
 			if(_level == 5) then {	
 				player forceAddUniform "vvv_character_swat_3";
-				player addHeadgear "Campaign_Hat_Dark"; 
+				player addHeadgear "A3L_sargehat"; 
 				this setFace "vvv_head_swat_3";
 			};
 			if(_level == 6) then {	
-				player forceAddUniform "silver_lake_police";
+				player forceAddUniform "silver_lake_sheriff";
 				player addHeadgear "Campaign_Hat_Light"; 
 				player addVest "EF_BS"; 
 			};
 			if(_level == 7) then {	
-				player forceAddUniform "silver_lake_fbi";
-				player addHeadgear "Campaign_Hat_Dark"; 
+				player forceAddUniform "silver_lake_sheriff";
+				player addHeadgear "A3L_sargehat";
+				player addVest "EF_BS";
 			};
 			if(_level == 8) then {
-				player forceAddUniform "silver_lake_fbi";
-				player addHeadgear "Campaign_Hat_Dark"; 
+				player forceAddUniform "silver_lake_sheriff";
+				player addHeadgear "A3L_sargehat";
+				player addVest "EF_BS";	
 			};
 
 		};
@@ -375,16 +376,20 @@ if(myjob == "Cop") then {
 		} else { 
 		
 			if(_level == 5) then {
-				player forceadduniform "EF_HMMSL_2"; 
+				player forceadduniform "LS_Marshal_Jacket";
+				player addHeadgear "LSMS_cap_blue"; 
 			};
 			if(_level == 6) then {
-				player forceadduniform "EF_HMMSL_2"; 
+				player forceadduniform "LS_Marshal_Jacket";
+				player addHeadgear "LSMS_cap_blue"; 
 			};
 			if(_level == 7) then {				
-				player forceadduniform "EF_HMMSL_2"; 
+				player forceadduniform "LS_Marshal_Jacket3"; 
+				player addHeadgear "LSMS_cap_blk"; 
 			};
 			if(_level == 8) then {
-				player forceAddUniform "EF_HMMSL_2";
+				player forceAddUniform "LS_Marshal_Jacket3";
+				player addHeadgear "LSMS_cap_blk"; 
 			};
 
 		};
@@ -681,12 +686,15 @@ if(myJob == "EMS") then {
 			if(_level == 5) then { player forceAddUniform "CG_EMS5"; };
 			if(_level == 6) then { player forceAddUniform "CG_EMS6"; };
 			if(_level == 7) then { player forceAddUniform "CG_EMS7"; };
-			if(_level == 8) then { player forceAddUniform "CG_EMS8";
-			player addWeapon "taser"; };
+			if(_level == 8) then { player forceAddUniform "CG_EMS6";
+			player addWeapon "taser";
+			player addheadgear "A3L_medic_helmet"; };
 			if(_level == 9) then { player forceAddUniform "CG_EMS10";
-			player addWeapon "taser"; };
+			player addWeapon "taser";
+			player addheadgear "A3L_medic_helmet";};
 			if(_level == 10) then { player forceAddUniform "CUP_U_C_Rescuer_01";
-			player addWeapon "taser"; };
+			player addWeapon "taser";
+			player addheadgear "A3L_medic_helmet";};
 		};
 
 		player addGoggles "Masque_Chirurgical";
