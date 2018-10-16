@@ -343,7 +343,7 @@ class ATMmafia
 			text = "Hæv penge";
 			colorBackground[] = {0.902,0.902,0.902,1};
 			colorText[] = {0,0,0,1};
-			action = [3] spawn Client_fnc_atmWithdraw;			
+			action = [1] spawn Client_fnc_atmWithdraw;			
 		};
 		class RscButton_1601 : HideButton 
 		{
@@ -355,7 +355,7 @@ class ATMmafia
 			text = "Indsæt penge";
 			colorBackground[] = {0.8,0.8,0.8,1};
 			colorText[] = {0,0,0,1};
-			action = [3] spawn Client_fnc_atmDeposit;
+			action = [1] spawn Client_fnc_atmDeposit;
 			
 		};
 		class RscButton_1602 : HideButton 
@@ -368,7 +368,7 @@ class ATMmafia
 			text = "Send penge";
 			colorBackground[] = {0.8,0.8,0.8,1};
 			colorText[] = {0,0,0,1};
-			action = [3] spawn Client_fnc_atmTransfer;			
+			action = [1] spawn Client_fnc_atmTransfer;			
 		};
 		class kRscButton_1603 : HideButton 
 		{
