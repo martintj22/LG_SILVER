@@ -8,7 +8,15 @@ class RscTitles
 
 enableDebugConsole = 1;
 
-disableChannels[] = {0,1,2,3,4};
+disableChannels[] = {
+	{0, true, true}, //--- Global Chat
+	{1, true, true}, //--- Side Chat
+	{2, true, true}, //--- Command Chat
+	{3, true, true}, //--- Group Chat
+	{4, true, true}, //--- Vehicle Chat
+	{5, false, true}, //--- Direct Chat
+	{6, true, true} //--- System Chat
+};
 
 respawn = "BASE";
 disabledAI = 1;
