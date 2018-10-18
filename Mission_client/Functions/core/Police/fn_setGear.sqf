@@ -154,18 +154,22 @@ if(myjob == "Cop") then {
 		} else { 
 			if(_level == 1) then {
 				player forceAddUniform "silver_lake_statepolice";
+				player addHeadgear "AM_PatrolHat";
                 player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 2) then {
 				player forceAddUniform "silver_lake_police";
+				player addHeadgear "AM_PatrolHat";
                 player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 3) then {
 				player forceadduniform "silver_lake_police";
+				player addHeadgear "AM_PatrolHat";
                 player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 4) then {			
 				player forceadduniform "silver_lake_police";
+				player addHeadgear "AM_PatrolHat";
                 player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 5) then { 
@@ -180,18 +184,24 @@ if(myjob == "Cop") then {
 			};
 			if(_level == 6) then {	
 				player forceadduniform "silver_lake_police";
+				player addHeadgear "AM_PatrolHat";
                 player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 7) then {		
 				player forceAddUniform "silver_lake_fbi";
+				player addHeadgear "AM_PatrolHat";
                 player addVest "TRYK_V_IOTV_BLK";
+			};	
 			if(_level == 8) then {
 				player forceAddUniform "silver_lake_fbi";
+				player addHeadgear "AM_PatrolHat";
                 player addVest "TRYK_V_IOTV_BLK";
 			};
 			
 		};
 	};
+
+
 
 	// highway bureau
 	if(_type == "highway") then {
