@@ -64,7 +64,8 @@ if(myjob == "Cop") then {
 	};	
 
 	if(_level == 9) then { 
-		player forceAddUniform "vvv_traje_policia_1";
+		player forceAddUniform "silver_lake_fbi";
+        player addVest "TRYK_V_IOTV_BLK";
 	};	
 
 	// patrol bureau
@@ -78,7 +79,7 @@ if(myjob == "Cop") then {
 		["govtBank", format["%1 (%2) removed %3 into the Government bank account.", name player, getplayeruid player, _cost call client_fnc_numberText]] remoteExec ["server_fnc_log",2];
 
 		if (_level == 5) then { 
-			player addBackpack "AM_POLICEBELT";
+			player addBackpack "invisible_carryall";
 		} else {
 			player addBackpack "AM_PoliceBelt"; 
 		};
@@ -152,25 +153,25 @@ if(myjob == "Cop") then {
 
 		} else { 
 			if(_level == 1) then {
-				player forceAddUniform "silver_lake_police";
-				player addHeadgear "AM_PatrolHat";
+				player forceAddUniform "silver_lake_statepolice";
+                player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 2) then {
 				player forceAddUniform "silver_lake_police";
-				player addHeadgear "AM_PatrolHat"; 
+                player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 3) then {
-				player forceadduniform "silver_lake_police"; 
-				player addHeadgear "AM_PatrolHat"; 
+				player forceadduniform "silver_lake_police";
+                player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 4) then {			
-				player forceadduniform "silver_lake_police"; 
-				player addHeadgear "AM_PatrolHat"; 
+				player forceadduniform "silver_lake_police";
+                player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 5) then { 
-				player forceadduniform "EF_M_jkt4"; 
-				player addVest "EF_BSF"; 
-				player addHeadgear "AM_PatrolHat"; 
+				player forceadduniform "U_Marshal";
+                player addVest "EF_BLT_M1BSF";
+                player addheadgear "H_Cap_police";
 				player removeweapon "cg_baton";
 				player additemtobackpack "EF_BADGE_P_NV";
 				player additemtobackpack "Press_Mic_CNN_F";
@@ -178,16 +179,15 @@ if(myjob == "Cop") then {
 				publicVariable "currentDetectives";
 			};
 			if(_level == 6) then {	
-				player forceadduniform "silver_lake_police"; 
-				player addHeadgear "H_007_policecap"; 
+				player forceadduniform "silver_lake_police";
+                player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 7) then {		
-				player forceAddUniform "silver_lake_police";
-				player addHeadgear "H_007_policecap"; 
-			};
+				player forceAddUniform "silver_lake_fbi";
+                player addVest "TRYK_V_IOTV_BLK";
 			if(_level == 8) then {
-				player forceAddUniform "vvv_traje_policia_2";
-				player addHeadgear "H_007_policecap"; 
+				player forceAddUniform "silver_lake_fbi";
+                player addVest "TRYK_V_IOTV_BLK";
 			};
 			
 		};
@@ -289,21 +289,21 @@ if(myjob == "Cop") then {
 			};
 			if(_level == 5) then {	
 				player forceAddUniform "vvv_character_swat_3";
-				player addHeadgear "A3L_sargehat"; 
+				player addHeadgear "TRYK_H_PASGT_BLK"; 
 				this setFace "vvv_head_swat_3";
 			};
 			if(_level == 6) then {	
-				player forceAddUniform "silver_lake_sheriff";
-				player addHeadgear "Campaign_Hat_Light"; 
+				player forceAddUniform "silver_lake_statepolice";
+				player addHeadgear "A3L_sargehat"; 
 				player addVest "EF_BS"; 
 			};
 			if(_level == 7) then {	
-				player forceAddUniform "silver_lake_sheriff";
+				player forceAddUniform "silver_lake_statepolice";
 				player addHeadgear "A3L_sargehat";
 				player addVest "EF_BS";
 			};
 			if(_level == 8) then {
-				player forceAddUniform "silver_lake_sheriff";
+				player forceAddUniform "silver_lake_statepolice";
 				player addHeadgear "A3L_sargehat";
 				player addVest "EF_BS";	
 			};
@@ -559,19 +559,19 @@ if(myjob == "doc") then {
 			};
 			if(_level == 6) then {	
 				player forceAddUniform "silver_lake_sheriff";
-				player addHeadgear "Campaign_Hat_Dark"; 
+				player addHeadgear "A3L_sargehat"; 
 			};
 			if(_level == 7) then {	
-				player forceAddUniform "silver_lake_fbi";
-				player addheadgear "Campaign_Hat_Dark";
+				player forceAddUniform "silver_lake_sheriff";
+				player addheadgear "A3L_sargehat";
 			};
 			if(_level == 8) then {
-				player forceAddUniform "silver_lake_fbi";
-				player addheadgear "Campaign_Hat_Dark";
+				player forceAddUniform "silver_lake_sheriff";
+				player addheadgear "A3L_sargehat";
 			};
 			if(_level == 9) then {
-				player forceAddUniform "silver_lake_fbi";
-				player addheadgear "Campaign_Hat_Dark";
+				player forceAddUniform "silver_lake_sheriff";
+				player addheadgear "A3L_sargehat";
 			};
 
 		};
