@@ -79,10 +79,10 @@ if(myjob == "Cop") then {
 		["govtBank", format["%1 (%2) removed %3 into the Government bank account.", name player, getplayeruid player, _cost call client_fnc_numberText]] remoteExec ["server_fnc_log",2];
 
 		if (_level == 5) then { 
-			player addBackpack "invisible_carryall";
-		} else {
-			player addBackpack "AM_PoliceBelt"; 
-		};
+            player addBackpack "AM_POLICEBELT";
+        } else {
+            player addBackpack "AM_PoliceBelt"; 
+        };
 
 
 		player linkItem "ItemMap";
@@ -130,14 +130,14 @@ if(myjob == "Cop") then {
 				player addHeadgear "Campaign_Hat_Light"; 
 			};
 			if(_level == 5) then { 
-			player forceadduniform "EF_M_jkt4"; 
+				player forceadduniform "EF_M_jkt4"; 
 				player addVest "EF_BSF"; 
 				player addheadgear "H_Hat_brown";
 				player removeweapon "cg_baton";
 				player additemtobackpack "Press_Mic_CNN_F";
 				currentDetectives pushBack player;
 				publicVariable "currentDetectives";
-			};
+			};	
 			if(_level == 6) then {
 				player forceadduniform "female_police2"; 
 				player addHeadgear "Campaign_Hat_Dark"; 
@@ -173,14 +173,13 @@ if(myjob == "Cop") then {
                 player addVest "TRYK_V_IOTV_BLK";
 			};
 			if(_level == 5) then { 
-				player forceadduniform "U_Marshal";
-                player addVest "EF_BLT_M1BSF";
-                player addheadgear "H_Cap_police";
-				player removeweapon "cg_baton";
-				player additemtobackpack "EF_BADGE_P_NV";
-				player additemtobackpack "Press_Mic_CNN_F";
-				currentDetectives pushBack player;
-				publicVariable "currentDetectives";
+				player forceadduniform "EF_M_jkt4";
+                player addVest "EF_BSF";
+                player addheadgear "H_Hat_brown";
+                player removeweapon "cg_baton";
+                player additemtobackpack "Press_Mic_CNN_F";
+                currentDetectives pushBack player;
+                publicVariable "currentDetectives";
 			};
 			if(_level == 6) then {	
 				player forceadduniform "silver_lake_police";
