@@ -59,5 +59,5 @@ LG_anim_pliers
 LG_anim_PunchRandom
 LG_anim_WeaponHit
 LG_push_animation
-LG_anim_Shovel="LG_anim_Shovel
+LG_anim_Shovel
 LG_anim_Hammer
