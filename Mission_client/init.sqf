@@ -34,7 +34,7 @@ if (isServer) then {
 	[] spawn client_fnc_billboardSetup;
 	[server_fnc_addJob, 120] execFSM "\NoPixel_server\call.fsm";
 	[Server_fnc_cleanup, 4200] execFSM "\NoPixel_server\call.fsm";
-	[Server_fnc_checktime, 600] execFSM "\NoPixel_server\call.fsm";
+	//[Server_fnc_checktime, 600] execFSM "\NoPixel_server\call.fsm";
 	[8,true,12] execFSM "\NoPixel_server\timeModule.fsm";
 
 	[client_fnc_lottoRun, 3600] execFSM "\NoPixel_server\call.fsm";

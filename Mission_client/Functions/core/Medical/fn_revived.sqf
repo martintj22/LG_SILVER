@@ -19,6 +19,7 @@ if(deadPhase == 2) then {
 
 sleep 1;
 deadphase = 0;
+playSound "defib";
 player setVariable ["tf_voiceVolume", 1, true];
 inGameUISetEventHandler ["Action", ""];
 
