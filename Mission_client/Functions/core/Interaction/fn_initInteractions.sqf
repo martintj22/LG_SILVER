@@ -1122,7 +1122,17 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(str CursorObject find 'gymbench' > -1 || str CursorObject find 'gymrack' > -1)"],
-		["Work Out", "['Doing Workout',60,'client_fnc_workout',player,'LG_pushups',player,''] spawn client_fnc_dotask; ",4]
+		["Pushups", "['Doing pushups',60,'client_fnc_workout',player,'LG_pushups',player,''] spawn client_fnc_dotask; ",4]
+	],
+
+	[
+		["(str CursorObject find 'gymbench' > -1 || str CursorObject find 'gymrack' > -1)"],
+		["Work muscle", "['Doing muscle Work',60,'client_fnc_workout',player,'LG_muscle',player,''] spawn client_fnc_dotask; ",4]
+	],
+	
+	[
+		["(str CursorObject find 'gymbench' > -1 || str CursorObject find 'gymrack' > -1)"],
+		["Wank muscle", "['Doing some Wank',60,'client_fnc_workout',player,'LG_anim_Wank',player,''] spawn client_fnc_dotask; ",4]
 	],
 
 	[

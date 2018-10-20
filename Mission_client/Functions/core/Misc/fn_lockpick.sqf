@@ -8,7 +8,7 @@ if (_obj isKindOf "House_F") exitWith {
 
 	if( !(_doorArray isEqualTo 0) ) then {
 
-		_check = ["Lockpicking",100,0,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"cg_sndimg\sounds\repair.ogg"] spawn client_fnc_dotask; 
+		_check = ["Lockpicking",100,0,player,'LG_anim_managerdoorlockpick',player,"cg_sndimg\sounds\repair.ogg"] spawn client_fnc_dotask; 
 		
 		waitUntil { scriptDone _check };
 
@@ -39,7 +39,7 @@ if (_obj isKindOf "House_F") exitWith {
 
 if(_obj iskindof "car"  || _obj iskindof "boat" || _obj iskindof "Air") exitWith {
 
-	_check = ["Lockpicking",100,0,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"cg_sndimg\sounds\repair.ogg"] spawn client_fnc_dotask; 
+	_check = ["Lockpicking",100,0,player,'LG_anim_lockpic',player,"cg_sndimg\sounds\repair.ogg"] spawn client_fnc_dotask; 
 
 	waitUntil { scriptDone _check };
 
