@@ -289,6 +289,7 @@ class CfgFunctions
 			class startLegalAid {};
 			class startJudge {};
 			class startLegal {};
+			class startLawyer {};
 		};
 		class JobTaxi {
 			file = "Functions\core\Jobs\JobTaxi";

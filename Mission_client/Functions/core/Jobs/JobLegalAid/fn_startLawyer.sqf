@@ -1,12 +1,12 @@
 //[_location] remoteExec ["client_fnc_startSecurity",_player];
 //[getpos player,] remoteExec ["client_fnc_startGarbage",_player];
 // use lexus with directionals only.
-
+if(myjob != "none") exitwith { ["You already have a job!", true] spawn domsg; };
 
 if(isnil "taskrunning") then { taskrunning = false; };
 
-myjob = "LegalAid";
-
+myjob = "Lawyer";
+[] call client_fnc_hudwork;
 private ["_warning","_JobBase"];
 if(!taskrunning) then {
 
@@ -17,7 +17,7 @@ if(!taskrunning) then {
 		_warnings = 0;
 		while{taskrunning} do {
 			uisleep 180;
-			paycheck = paycheck + 30;
+			paycheck = paycheck + 80;
 		};
 		[0] call client_fnc_jobEnd;
 	};
