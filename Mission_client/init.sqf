@@ -74,7 +74,7 @@ if (isServer) then {
 	deletevehicle _vehicle;
 
 	setTimeMultiplier 12;
-	setDate [2015, 3, 3, 03, 0];  
+	setDate [2015, 3, 3, 07, 0];  
 	0 setovercast 0; 
 	0 setrain 0; 
 	0 setRainbow 0;
