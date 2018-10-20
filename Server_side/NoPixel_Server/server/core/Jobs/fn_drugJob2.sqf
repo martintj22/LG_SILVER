@@ -1,7 +1,7 @@
 params ["_type","_number","_player","_pos"];
 private ["_vehspawn","_veh","_endmission","_amount"];
 
-if(count allplayers < 5) exitwith { ["Not enough players to add to event..", true] remoteExec["domsg", currentBiker]; };
+if(count allplayers < 35) exitwith { ["Not enough players to add to event..", true] remoteExec["domsg", currentBiker]; };
 	
 if(isNil "drugcount2") then { drugcount2 = 0; };
 
