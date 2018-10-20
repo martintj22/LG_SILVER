@@ -628,7 +628,7 @@ NoPixel_InteractionMenuItems = [
 		["Spin 90", " _dir = getdir currentcursortarget; currentcursortarget setdir (_dir + 90); " ,2]
 	],
 
-	[
+ /*	[
 		[" (player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable 'houselevel' > 1 )) && count mychairs > 0 "],
 		["Remove All Furniture", "  [0] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
@@ -652,7 +652,7 @@ NoPixel_InteractionMenuItems = [
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable 'houselevel' > 1 )) && player distance getpos currentcursortarget < 20 && !attachedfurniture "],
 		["Pick Furniture", " createdialog 'placefurniture' ",2]
-	],
+	],*/
 
 	[
 		[" attachedbarrier "],
@@ -791,6 +791,16 @@ NoPixel_InteractionMenuItems = [
 	[
 		[" isPlayer currentcursortarget && currentcursortarget isKindOf 'Man' && !imrestrained", "(headgear CurrentCursorTarget) == 'mgsr_headbag' "],
 		["Remove Blindfold", " ['Removing Blindfold',5,'client_fnc_unblindfold',CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,'cg_sndimg\sounds\blindfold.ogg'] spawn client_fnc_dotask",2]
+	],
+
+	[
+		[" CurrentCursorTarget isKindOf 'Man' && !(cursorTarget getVariable [""gagged"", false])", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
+		["Put on sock", " ['put sock in mouth',5,'client_fnc_gag',CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,'cg_sndimg\sounds\blindfold.ogg'] spawn client_fnc_dotask ",2]
+	],
+	
+	[
+		[" CurrentCursorTarget isKindOf 'Man' && (cursorTarget getVariable [""gagged"", false])"],
+		["Pull out sock", " ['I pull out a sock from the murder',5,'client_fnc_ungag',CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,'cg_sndimg\sounds\blindfold.ogg'] spawn client_fnc_dotask",2]
 	],
 
 	[
@@ -1112,7 +1122,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(str CursorObject find 'gymbench' > -1 || str CursorObject find 'gymrack' > -1)"],
-		["Work Out", "['Doing Workout',60,'client_fnc_workout',player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,''] spawn client_fnc_dotask; ",4]
+		["Work Out", "['Doing Workout',60,'client_fnc_workout',player,'LG_pushups',player,''] spawn client_fnc_dotask; ",4]
 	],
 
 	[

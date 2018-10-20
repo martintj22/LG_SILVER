@@ -599,6 +599,9 @@ class CfgFunctions
 			class tazed {};
 			class sharphit {};
 			class blunthit {};
+			class gag {};
+			class ungag {};
+			class gagged {};
 		};
 		class Money
 		{
