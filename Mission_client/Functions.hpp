@@ -486,6 +486,13 @@ class CfgFunctions
 			class sellfish {};
 
 		};
+		
+			class LG_custom
+		{
+			file = "Functions\core\LG_custom";
+			class LG_Dirty_Factory {};
+		};
+		
 		class EventHandlers
 		{
 			file = "Functions\core\EventHandlers";

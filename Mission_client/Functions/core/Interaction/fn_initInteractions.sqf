@@ -1478,7 +1478,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["myjob == 'Mafia' && (player getvariable 'Mafia') > 0 && (typeof cursorobject IN ['Land_PowerGenerator_F'])"],
-		["Start factory", "[player,'Mobster'] spawn client_fnc_jobstart;",4]
+		["Start factory", "[player,'Mafia'] spawn client_fnc_LG_Dirty_Factory;",4]
 	],
 	
 	[
