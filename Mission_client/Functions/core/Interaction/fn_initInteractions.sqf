@@ -1455,6 +1455,12 @@ NoPixel_InteractionMenuItems = [
 		["Sign-in Mobster", "[player,'Mobster'] spawn client_fnc_jobstart;",4]
 	],
 
+	
+	[
+		["myjob == 'Mafia' && (player getvariable 'Mafia') > 0 && (typeof cursorobject IN ['Land_PowerGenerator_F'])"],
+		["Start factory", "[player,'Mobster'] spawn client_fnc_jobstart;",4]
+	],
+	
 	[
 		["myjob == 'Mobster' && (typeof cursorobject IN ['Land_buildingsCasino2'])"],
 		["Sign-out Mobster", "[0] call client_fnc_jobEnd",4]

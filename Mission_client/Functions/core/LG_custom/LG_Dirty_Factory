@@ -1,0 +1,35 @@
+
+
+["(typeof cursorobject IN ['vvv_modelos4_cuadroeletrico2'])"],
+["Pay Taxes", "createdialog 'buycar';",1]
+
+
+
+FAC = 0;
+
+
+while {FAC = 0} do {
+
+      ["Ikke nok mafia online!", true] spawn domsg; 
+
+    
+};
+
+
+
+if(count currentMafia > 0) then { 
+                ["Frabrikken!", true] spawn domsg; 
+ 
+         if(player distance [1396.672,1206.453,0.00144196] < 80) then { 
+                ["Du er tæt på frabrikken!", true] spawn domsg; 
+                sleep 30;
+                [500,true,true] call Client_fnc_addMoneyToPlayer;
+                ["Penge printeren har givet 500!", true] spawn domsg; 
+ 
+         } else { 
+                ["Du skal være tæt på frabrikkken!", true] spawn domsg; 
+         }; 
+ 
+ } else { 
+      ["Ikke nok mafia online!", true] spawn domsg; 
+};

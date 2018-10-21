@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=3818;
+		nextID=3832;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6737.6816,7.4998364,4588.2202};
-		dir[]={0.39818799,-0.48114571,0.78100759};
-		up[]={0.21855114,0.87662679,0.42866763};
-		aside[]={0.89090383,-3.4302502e-007,-0.45421949};
+		pos[]={1386.5898,52.096432,1203.6414};
+		dir[]={0.065163307,-0.29235521,0.95410734};
+		up[]={0.019921871,0.95630687,0.29168442};
+		aside[]={0.99769622,-1.0496551e-006,-0.068138823};
 	};
 };
 binarizationWanted=0;
@@ -53,13 +53,15 @@ addons[]=
 	"Gate_C",
 	"A3_Structures_F_Civ_Lamps",
 	"DED_Simple_01",
-	"CG_Roads"
+	"CG_Roads",
+	"A3_Props_F_Exp_Military_Camps",
+	"A3_Structures_F_Ind_WindPowerPlant"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=29;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -213,6 +215,20 @@ class AddonsMetaData
 			className="CG_Roads";
 			name="CG_Roads";
 		};
+		class Item27
+		{
+			className="A3_Props_F_Exp";
+			name="Arma 3 Apex - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item28
+		{
+			className="A3_Structures_F_Ind";
+			name="Arma 3 - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=14654677;
@@ -243,7 +259,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1384;
+		items=1386;
 		class Item0
 		{
 			dataType="Marker";
@@ -412,7 +428,7 @@ class Mission
 			position[]={7319.7217,5.3434937e+024,4584.4844};
 			name="race_5";
 			type="Empty";
-			angle=108.75141;
+			angle=108.7514;
 			id=257;
 			atlOffset=5.3434937e+024;
 		};
@@ -32081,6 +32097,37 @@ class Mission
 			id=3815;
 			type="Land_Fancysidewalk_DED_Fancysidewalk_05_F";
 			atlOffset=0.42963028;
+		};
+		class Item1384
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1381.5879,49.261501,1212.4968};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3823;
+			type="Land_PortableGenerator_01_F";
+		};
+		class Item1385
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1383.7118,49.681362,1212.7676};
+				angles[]={0,1.5425731,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3830;
+			type="Land_PowerGenerator_F";
 		};
 	};
 };
