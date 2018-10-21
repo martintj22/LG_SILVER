@@ -1,5 +1,5 @@
 disableSerialization;
 
+["Dispatch: en person er ned!", true] spawn domsg;
 player say "mdciv";
 
-["Your map has been updated with an injured patient!", true] spawn domsg;

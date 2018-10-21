@@ -31,6 +31,13 @@ _markers = [];
 		_marker setMarkerTextLocal format["%1%2", _x getVariable "emsCar", _passengers];
 		_markers pushBack [_marker,_x];
 	};
+	if ( _x getVariable["pdCar",""] != "") then {
+		_marker = createMarkerLocal [format["%1%2_PD_CAR",getplayeruid _x, random 10000],visiblePosition _x];
+		_marker setMarkerColorLocal "ColorBlue";
+		_marker setMarkerTypeLocal "hd_dot";
+		_marker setMarkerTextLocal format["%1%2", _x getVariable "pdCar", _passengers];
+		_markers pushBack [_marker,_x];
+	};
 }foreach vehicles;
 
 {
@@ -44,6 +51,20 @@ _markers = [];
 	if ( _x in currentems && "ItemGPS" in assignedItems _x && player IN currentMedicDispatch && _x == vehicle _x) then {
 		_marker = createMarkerLocal [format["%1_EMS_UNIT",getplayeruid _x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorGreen";
+		_marker setMarkerTypeLocal "hd_dot";
+		_marker setMarkerTextLocal format["%1 %2", name _x, _x getVariable "badgeNumber"];
+		_markers pushBack [_marker,_x];
+	};
+	if ( _x in currentfire && "ItemGPS" in assignedItems _x && player IN currentMedicDispatch && _x == vehicle _x) then {
+		_marker = createMarkerLocal [format["%1_FD_UNIT",name _x],visiblePosition _x];
+		_marker setMarkerColorLocal "ColorYellow";
+		_marker setMarkerTypeLocal "hd_dot";
+		_marker setMarkerTextLocal format["%1",name _x];
+		_markers pushBack [_marker,_x];
+	};
+	if ( _x in currentcop && "ItemGPS" in assignedItems _x && player IN currentMedicDispatch && _x == vehicle _x) then {
+		_marker = createMarkerLocal [format["%1_PD_UNIT",getplayeruid _x],visiblePosition _x];
+		_marker setMarkerColorLocal "ColorBlue";
 		_marker setMarkerTypeLocal "hd_dot";
 		_marker setMarkerTextLocal format["%1 %2", name _x, _x getVariable "badgeNumber"];
 		_markers pushBack [_marker,_x];
@@ -70,7 +91,7 @@ while {visibleMap} do
 	if(!visibleMap) exitWith {};
 	uiSleep 0.05;
 };
-{deleteMarkerLocal (_x select 0);} foreach _markers;	
+{deleteMarkerLocal (_x select 0);} foreach _markers;
 
 
 

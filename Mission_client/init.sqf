@@ -34,7 +34,8 @@ if (isServer) then {
 	[] spawn client_fnc_billboardSetup;
 	[server_fnc_addJob, 120] execFSM "\NoPixel_server\call.fsm";
 	[Server_fnc_cleanup, 4200] execFSM "\NoPixel_server\call.fsm";
-	[Server_fnc_checktime, 600] execFSM "\NoPixel_server\call.fsm";
+	//[Server_fnc_checktime, 600] execFSM "\NoPixel_server\call.fsm";
+	[8,true,12] execFSM "\NoPixel_server\timeModule.fsm";
 
 	[client_fnc_lottoRun, 3600] execFSM "\NoPixel_server\call.fsm";
 	[client_fnc_horseRace, 600] execFSM "\NoPixel_server\call.fsm";
@@ -72,8 +73,9 @@ if (isServer) then {
 	uisleep 0.05;
 	deletevehicle _vehicle;
 
-	setDate [2015, 3, 3, 06, 0];  
-	0 setovercast 0.15;  
+	setTimeMultiplier 12;
+	setDate [2015, 3, 3, 07, 0]; 
+	0 setovercast 0; 
 	0 setrain 0; 
 	0 setRainbow 0;
 	0 setlightnings 0; 
@@ -83,19 +85,8 @@ if (isServer) then {
 	0 setWindStr 0;
 	0 setGusts 0;
 	0 setwinddir 0;
-	forceWeatherChange;
-	999999 setovercast 0.15;  
-	999999 setrain 0; 
-	999999 setRainbow 0;
-	999999 setlightnings 0; 
-	999999 setfog 0;
-	999999 setWaves 0;
-	999999 setWindForce 0;
-	999999 setWindStr 0;
-	999999 setGusts 0;
-	999999 setwinddir 0;
 	skiptime 1;
-	settimemultiplier 4;
+	
 	[] spawn client_fnc_lootsetup;
 	[] spawn { 
 

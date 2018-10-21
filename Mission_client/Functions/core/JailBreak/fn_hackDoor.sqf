@@ -10,9 +10,9 @@ if(typeof cursorobject IN ["Land_buildingsJailCellBlock1"]) then {
 
 	playSound3D ["CG_Jobs\sounds\jailbreak\hacking.ogg", player, false, (getposasl player), 1, 1, 25];
 	_calcT = 0;
-	player playmove "vvv_anim_lockpick";
+	player playmove "LG_anim_managerdoorlockpick";
 	while {true} do {
-		if(animationstate player != "vvv_anim_lockpick") then { player playmove "vvv_anim_lockpick"; };
+		if(animationstate player != "LG_anim_managerdoorlockpick") then { player playmove "LG_anim_managerdoorlockpick"; };
 		_calcT = _calcT + 1;
 		if(_calcT > 25) exitwith {};
 		uisleep 1;

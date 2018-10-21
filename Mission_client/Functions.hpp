@@ -289,6 +289,7 @@ class CfgFunctions
 			class startLegalAid {};
 			class startJudge {};
 			class startLegal {};
+			class startLawyer {};
 		};
 		class JobTaxi {
 			file = "Functions\core\Jobs\JobTaxi";
@@ -599,6 +600,9 @@ class CfgFunctions
 			class tazed {};
 			class sharphit {};
 			class blunthit {};
+			class gag {};
+			class ungag {};
+			class gagged {};
 		};
 		class Money
 		{

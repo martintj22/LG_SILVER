@@ -85,6 +85,10 @@ if((_this select 0) == 1) exitwith {
 		createVehicleCrew _vehicle; 
 	};
 
+	if( typeOf _vehicle in ["NP_Jonzie_Ambulance1","NP_Jonzie_Ambulance2"] ) then { 
+		_vehicle addItemCargoGlobal ["mr_stretcher",1];
+	};
+
 	if( _vehicle isKindOf "Car") then {
 		_vehicle addItemCargoGlobal ["CG_wheel", 3];
 		

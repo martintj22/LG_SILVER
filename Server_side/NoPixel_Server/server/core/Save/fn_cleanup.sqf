@@ -35,6 +35,13 @@ if(isNil "carPosition") then { carPosition = []; };
 	 };   
 } foreach vehicles;
 
+_dateHour = date select 3;
+if (6 < _dateHour && _dateHour< 18) then {
+    setTimeMultiplier 12;
+} else {
+    setTimeMultiplier 24;
+};
+
 
 _list = (allMissionObjects "WeaponHolder") + 
 	(allMissionObjects "GroundWeaponHolder") + 
