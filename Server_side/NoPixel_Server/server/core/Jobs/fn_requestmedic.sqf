@@ -4,4 +4,4 @@ diag_log ["request medic %1", _player];
  
 if(count currentEMS == 0) exitwith {}; 
  
-[getpos _player] remoteExec ["client_fnc_requestMedic",currentEMS];
+[getPos _player, "Downed Person", "Location", currentEMS] remoteExec ["client_fnc_requestMedic"];
