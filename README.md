@@ -8,7 +8,7 @@ Vores nye killzone system er snart klar til de skydegale.
 Vi har har lavet det her system for at der kunne komme lidt mere konkurrence på serveren, eftersom nogle factions er begyndt at kede sig.
 
 Vi har placeret en enkelt bygning, med en money printer inde i zonen som kan startes af et faction medlem inden fra biker eller mafia. 
-Er både biker og mafia inden for zonen, stopper maskinen automatisk. Biker og mafia har mullighed for at arbejde sammen med mobsters, så de må kæmpe om at få en aftale i hus med mobsters, hvis de mener det er en god idee.
+Er både biker og mafia inden for zonen, stopper maskinen automatisk. Biker og mafia har mullighed for at arbejde sammen med mobsters, så de må kæmpe om at få en aftale i hus med mobsters, hvis de mener der er behøv for det
 
 Money printeren giver 2500 i minuttet og kan kun startes af en person.
 
