@@ -73,7 +73,6 @@ if (isServer) then {
 	uisleep 0.05;
 	deletevehicle _vehicle;
 
-	setTimeMultiplier 12;
 	setDate [2015, 3, 3, 07, 0]; 
 	0 setovercast 0; 
 	0 setrain 0; 
@@ -86,6 +85,13 @@ if (isServer) then {
 	0 setGusts 0;
 	0 setwinddir 0;
 	skiptime 1;
+
+_dateHour = date select 3;
+if (6 < _dateHour && _dateHour< 18) then {
+    setTimeMultiplier 12;
+} else {
+    setTimeMultiplier 24;
+};
 	
 	[] spawn client_fnc_lootsetup;
 	[] spawn { 
