@@ -73,7 +73,7 @@ if (isServer) then {
 	uisleep 0.05;
 	deletevehicle _vehicle;
 
-	setDate [2015, 3, 3, 07, 0]; 
+	setDate [2035, 12, 38, 0, 0]; 
 	0 setovercast 0; 
 	0 setrain 0; 
 	0 setRainbow 0;
