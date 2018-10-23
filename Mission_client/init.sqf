@@ -87,10 +87,10 @@ if (isServer) then {
 	skiptime 1;
 
 _dateHour = date select 3;
-if (6 < _dateHour && _dateHour< 18) then {
-    setTimeMultiplier 12;
-} else {
+if (6 < _dateHour && _dateHour< 19) then {
     setTimeMultiplier 24;
+} else {
+    setTimeMultiplier 12;
 };
 	
 	[] spawn client_fnc_lootsetup;
