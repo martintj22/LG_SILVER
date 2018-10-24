@@ -384,7 +384,8 @@ if(_condition == "backpack") then {
 		["EF_FBAG_SL_BK",nil,100,4,2],
 		["B_Kitbag_mcamo",nil,500,4,2],
 		["invisible_kitbag",nil,1000,4,2],
-		["invisible_carryall",nil,2000,4,2]
+		["invisible_carryall",nil,2000,4,2],
+		["invisible_bergen",nil,8000,4,2]
 	];
 
 	{
@@ -637,6 +638,7 @@ if(_condition == "glasses") then {
 		["G_Lady_Blue",nil,120,3,4],
 		["G_Lowprofile",nil,120,3,4],
 		["G_Combat",nil,120,3,4],
+		["G_Diving",nil,350,3,4],
 
 		["EF_ACC1",nil,120,3,4],
 		["EF_ACC2",nil,120,3,4],
