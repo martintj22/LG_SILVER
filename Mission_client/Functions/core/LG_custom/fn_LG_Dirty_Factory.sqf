@@ -15,17 +15,16 @@ if(myJob == "Mafia") then {
 
 };
  
- 
-                 //faction start 
-                ["Penge maskinen er startet!", true] spawn domsg; 
-                sleep 30;
-                [500,true,true] call Client_fnc_addMoneyToPlayer;
-                ["Penge printeren har givet 500!", true] spawn domsg; 
-		sleep 30;
-                [500,true,true] call Client_fnc_addMoneyToPlayer;
-                ["Penge printeren har givet 500!", true] spawn domsg; 
-		sleep 30;
-                [500,true,true] call Client_fnc_addMoneyToPlayer;
-                ["Penge printeren har givet 500!", true] spawn domsg; 
-		["Penge printeteren er ved at genoplade, den kan startes igen om 1.min!", true] spawn domsg; 
-		sleep 60;
+ //faction start 
+["Penge maskinen er startet!", true] spawn domsg; 
+        sleep 30;
+[500,true,true] call Client_fnc_addMoneyToPlayer;
+["Penge printeren har givet 500!", true] spawn domsg; 
+	sleep 30;
+[500,true,true] call Client_fnc_addMoneyToPlayer;
+["Penge printeren har givet 500!", true] spawn domsg; 
+	sleep 30;
+[500,true,true] call Client_fnc_addMoneyToPlayer;
+["Penge printeren har givet 500!", true] spawn domsg; 
+["Penge printeteren er ved at genoplade, den kan startes igen om 1.min!", true] spawn domsg; 
+	sleep 60;
