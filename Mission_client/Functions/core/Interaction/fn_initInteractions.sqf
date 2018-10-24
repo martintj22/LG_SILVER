@@ -1477,8 +1477,14 @@ NoPixel_InteractionMenuItems = [
 
 	
 	[
-		["myjob == 'Mafia' && (player getvariable 'Mafia') > 0 && (typeof cursorobject IN ['Land_PowerGenerator_F'])"],
+		["myjob == 'Mafia' && (player getvariable 'Mafia') > 0 && (typeof cursorobject IN ['Land_Device_slingloadable_F']) && count currentBiker > 0"],
 		["Start factory", "[player,'Mafia'] spawn client_fnc_LG_Dirty_Factory;",4]
+	],
+	
+	
+		[
+		["myjob == 'Biker' && (player getvariable 'Biker') > 0 && (typeof cursorobject IN ['Land_Device_slingloadable_F']) && count currentMafia > 0"],
+		["Start factory", "[player,'Biker'] spawn client_fnc_LG_Dirty_Factory;",4]
 	],
 	
 	[
