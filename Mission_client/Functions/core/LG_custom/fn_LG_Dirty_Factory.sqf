@@ -1,9 +1,6 @@
 
- 
- 
 
- 
- if(myJob == "Mafia") then {
+if(myJob == "Mafia") then {
  onlyFac = 1;
  publicVariable "onlyFac";
  	if(player distance [2687.35,1462.83,0.00144196] < 400) then {
