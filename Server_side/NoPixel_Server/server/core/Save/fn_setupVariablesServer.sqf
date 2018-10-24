@@ -54,6 +54,9 @@ drugcount = 0;
 drugcount2 = 0;
 
 vaultTimer = 0;
+facRun = 10;
+
+publicvariable "facRUN";
 
 publicvariable "robbedBanks";
 
