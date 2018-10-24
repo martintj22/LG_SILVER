@@ -8,18 +8,18 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=3832;
+		nextID=3839;
 	};
 	class MarkerIDProvider
 	{
-		nextID=37;
+		nextID=38;
 	};
 	class Camera
 	{
-		pos[]={1386.5898,52.096432,1203.6414};
-		dir[]={0.065163307,-0.29235521,0.95410734};
-		up[]={0.019921871,0.95630687,0.29168442};
-		aside[]={0.99769622,-1.0496551e-006,-0.068138823};
+		pos[]={4354.1313,103.74194,5550.5435};
+		dir[]={-0.79315519,-0.21908398,0.56831366};
+		up[]={-0.17810188,0.97569931,0.12761445};
+		aside[]={0.5824635,-1.413282e-007,0.81290549};
 	};
 };
 binarizationWanted=0;
@@ -54,14 +54,14 @@ addons[]=
 	"A3_Structures_F_Civ_Lamps",
 	"DED_Simple_01",
 	"CG_Roads",
-	"A3_Props_F_Exp_Military_Camps",
-	"A3_Structures_F_Ind_WindPowerPlant"
+	"A3_Structures_F_Naval_Piers",
+	"A3_Props_F_Exp_Military_Camps"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=29;
+		items=28;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -222,13 +222,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
-		{
-			className="A3_Structures_F_Ind";
-			name="Arma 3 - Industrial Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
 	};
 };
 randomSeed=14654677;
@@ -259,7 +252,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1386;
+		items=1389;
 		class Item0
 		{
 			dataType="Marker";
@@ -32103,31 +32096,76 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1381.5879,49.261501,1212.4968};
+				position[]={4362.1885,96.907616,5563.9277};
 			};
 			side="Empty";
-			flags=4;
+			flags=1;
 			class Attributes
 			{
 			};
-			id=3823;
-			type="Land_PortableGenerator_01_F";
+			id=3832;
+			type="Land_Pier_F";
+			atlOffset=0.3839035;
 		};
 		class Item1385
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1383.7118,49.681362,1212.7676};
-				angles[]={0,1.5425731,0};
+				position[]={4362.1987,96.972183,5549.6465};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3833;
+			type="Land_Pier_F";
+		};
+		class Item1386
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4359.104,103.86594,5555.4175};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3834;
+			type="Land_em_heliport_01";
+			atlOffset=0.1000061;
+		};
+		class Item1387
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4348.7314,102.55458,5554.52};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 			};
-			id=3830;
-			type="Land_PowerGenerator_F";
+			id=3835;
+			type="Land_Device_slingloadable_F";
+		};
+		class Item1388
+		{
+			dataType="Marker";
+			position[]={4372.2383,62.947021,5569.626};
+			name="marker_37";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.54690021;
+			a=292.09692;
+			b=260.23096;
+			id=3838;
+			atlOffset=-37.892197;
 		};
 	};
 };
