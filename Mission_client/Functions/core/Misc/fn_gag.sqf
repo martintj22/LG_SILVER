@@ -7,7 +7,7 @@ if(!isPlayer _unit) exitWith {};
 //Broadcast!
 
 ["I put my sock... please wait!", false] spawn domsg;
-playSound3D ["cg_sndimg\sounds\blindfold.ogg", cursortarget, false, getPosASL player, 1, 1, 125];
+playSound3D ["cg_mission_files\sounds\gagged.ogg", cursortarget, false, getPosASL player, 1, 1, 125];
 _cme = 1;
 _myposy = getPos player;
 //["Remove",30] call fnc_karma;

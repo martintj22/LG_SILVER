@@ -18,7 +18,7 @@ for [{_x=1},{_x<=25},{_x=_x+1}] do {
 
 cutText ["YOU HAVE BEEN PARALYZED. YOU MAY TALK, BUT NOT MOVE.","PLAIN"];
 
-[_unit] remoteExec ["client_fnc_requestMedic", 2];
+[_unit] remoteExec ["server_fnc_requestMedic", 2];
 
 [_unit, vehicle _unit, _headshot] spawn {
 	params["_unit","_vehicle","_headshot"];
