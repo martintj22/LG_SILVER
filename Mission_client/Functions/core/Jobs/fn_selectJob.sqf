@@ -1,4 +1,4 @@
-if(taskrunning) exitwith {["You already have a job", true] spawn domsg; };
+if(taskrunning) exitwith {["Du har allerede et job", true] spawn domsg; };
 _data = lbData[9001,lbCurSel (9001)];
 _data = call compile format["%1", _data];
 _clientJobs = ["Wood Logging"];

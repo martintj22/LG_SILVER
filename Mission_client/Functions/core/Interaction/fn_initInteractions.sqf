@@ -61,7 +61,7 @@ NoPixel_InteractionMenuItemsMap = [
 
 	[ 
 		["visibleMap"], 
-		["Centrelink", " ['Centrelink'] spawn client_fnc_marker; ",5] 
+		["Job center", " ['Centrelink'] spawn client_fnc_marker; ",5] 
 	],
 	
 	[ 
@@ -71,7 +71,7 @@ NoPixel_InteractionMenuItemsMap = [
 	
 	[ 
 		["visibleMap"], 
-		["Verizon", " ['Verizon'] spawn client_fnc_marker; ",5] 
+		["Verizon elektronik", " ['Verizon'] spawn client_fnc_marker; ",5] 
 	],
 	
 	[ 
@@ -121,7 +121,7 @@ NoPixel_InteractionMenuItemsMap = [
 	
 	[ 
 		["visibleMap"], 
-		["Barber Shop", " ['Barber'] spawn client_fnc_marker; ",5] 
+		["Frisør", " ['Barber'] spawn client_fnc_marker; ",5] 
 	],
 
 	[ 
@@ -136,7 +136,7 @@ NoPixel_InteractionMenuItemsMap = [
 	
 	[ 
 		["visibleMap"], 
-		["Miscellaneous", " ['Misc'] spawn client_fnc_marker; ",5] 
+		["Diverse", " ['Misc'] spawn client_fnc_marker; ",5] 
 	]
 ];
 
