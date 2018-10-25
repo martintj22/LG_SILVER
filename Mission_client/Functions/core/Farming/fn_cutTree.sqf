@@ -42,7 +42,7 @@ if (str _tree find ": t_" > -1 && cursorobject distance player < 45) then {
 			if(_level_check > 599) then { [] call client_fnc_packLogs; };
 			
 		} else {
-			["You need to sign in as a wood logger to cut down trees", true] spawn domsg;
+			["Du skal have et job som wood logger for at kunne hygge træer", true] spawn domsg;
 		};
 	};
 };
