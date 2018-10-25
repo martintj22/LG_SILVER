@@ -100,8 +100,8 @@ uisleep 15;
 
 _script = [
 	[
-		["Choose your sex","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
-		["This can be changed; Though, it may involve surgery.","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
+		["Vælg et køn","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
+		["Dette kan ændres; men det  indebære kirurgi.","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -126,8 +126,8 @@ waitUntil { scriptDone _script };
 
 _script = [
 	[
-		["Start med at tjekke din trailer.","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
-		["Du har nemlig fået post. Ha det godt.","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
+		["Start med at bruge windows key på din trailer, hvor du vil finde din bil","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
+		["For at finde butiker, og andre ting skal du trykke m og derfter windows key for at se ikoner på mappet!! .","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
