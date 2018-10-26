@@ -112,6 +112,7 @@ class CfgFunctions
 			file = "Functions\core\JailBreak";
 			class jailclothing {};
 			class workout {};
+			class wank {};
 			class craftlockpick {};
 			class crafthackingdevice {};
 			class blowdoor {};
