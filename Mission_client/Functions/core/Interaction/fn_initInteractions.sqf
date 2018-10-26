@@ -405,7 +405,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" PLAYER DISTANCE [6270.86,1359.5,0.00143623] < 15 && !imRestrained && !(player getVariable ['surrender', false]) && (myjob == 'Biker' || allowdance ) "],
+		[" PLAYER DISTANCE [6270.86,1359.5,0.00143623] < 15 && !imRestrained && !(player getVariable ['surrender', false]) "],
 		["Dance", " [0] spawn client_fnc_dance; ",1]
 	],
 
