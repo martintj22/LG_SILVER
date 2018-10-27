@@ -129,6 +129,17 @@ class phoneHUD
 			action = "[] spawn client_fnc_dVol;";
 		};
 
+		class SpeakerMode: RscButtonSilent
+		{
+			idc = 4101;
+			text = "";
+			x = 0.35;
+			y = 0.3;
+			w = 0.1;
+			h = 0.1;
+			action = "[] spawn client_fnc_speakerMode;";
+		};
+
 
 
 

@@ -7,7 +7,7 @@ _current = {_x == _item} count magazines player;
 if(_current == 0) exitwith {};
 
 if (_item == "np_tequila") then { ["Remove","Karma",5000,"Stress"] call client_fnc_sustain; [] spawn client_fnc_drinkTequila; [_item,0] spawn client_fnc_removeitem; closeDialog 0; client_drunk = client_drunk + 10; };
-if (_item == "murshun_cigs_cigpack") then { ["Remove","Karma",50,"Stress"] call client_fnc_sustain; ["remove","unhealthiness",30] call client_fnc_sustain; [_item,20] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "murshun_cigs_cig4") then { ["Remove","Karma",50,"Stress"] call client_fnc_sustain; ["remove","unhealthiness",30] call client_fnc_sustain; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
 if (_item == "NP_DrugTable") then {
 	if(player distance [2687.35,1462.83,0.00144196] < 400) then {
