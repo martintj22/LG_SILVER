@@ -35,7 +35,9 @@ if (isServer) then {
 	[server_fnc_addJob, 120] execFSM "\NoPixel_server\call.fsm";
 	[Server_fnc_cleanup, 4200] execFSM "\NoPixel_server\call.fsm";
 	//[Server_fnc_checktime, 600] execFSM "\NoPixel_server\call.fsm";
-	[8,true,12] execFSM "\NoPixel_server\timeModule.fsm";
+	
+	[7,true,24] execFSM "\NoPixel_server\timeModule.fsm";
+	setDate [2018, 12, 27, 7, 0];
 
 	[client_fnc_lottoRun, 3600] execFSM "\NoPixel_server\call.fsm";
 	[client_fnc_horseRace, 600] execFSM "\NoPixel_server\call.fsm";
@@ -72,26 +74,6 @@ if (isServer) then {
 
 	uisleep 0.05;
 	deletevehicle _vehicle;
-
-	setDate [2018, 12, 28, 7, 0]; 
-	0 setovercast 0; 
-	0 setrain 0; 
-	0 setRainbow 0;
-	0 setlightnings 0; 
-	0 setfog 0;
-	0 setWaves 0;
-	0 setWindForce 0;
-	0 setWindStr 0;
-	0 setGusts 0;
-	0 setwinddir 0;
-	skiptime 1;
-
-_dateHour = date select 3;
-if (6 < _dateHour && _dateHour< 19) then {
-    setTimeMultiplier 24;
-} else {
-    setTimeMultiplier 12;
-};
 	
 	[] spawn client_fnc_lootsetup;
 	[] spawn { 
