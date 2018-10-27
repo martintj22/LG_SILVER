@@ -1485,7 +1485,6 @@ NoPixel_InteractionMenuItems = [
 		["myjob == 'ColaMand' && (player getvariable 'Colamand') > 0 && (typeof cursorobject IN ['Ship_f02']) && colaSkib < 0"],
 		["Hent Produkter", "[player,'ColaMand'] spawn client_fnc_LG_cola_Mat;",4]
 	],
-		[
 		["myjob == 'Biker' && (player getvariable 'Biker') > 0 && (typeof cursorobject IN ['Land_Device_slingloadable_F']) && count currentMafia > 0"],
 		["Start factory", "[player,'Biker'] spawn client_fnc_LG_Dirty_Factory;",4]
 	],
