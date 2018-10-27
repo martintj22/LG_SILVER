@@ -37,7 +37,7 @@ if (isServer) then {
 	//[Server_fnc_checktime, 600] execFSM "\NoPixel_server\call.fsm";
 	
 	[7,true,24] execFSM "\NoPixel_server\timeModule.fsm";
-	setDate [2018, 12, 27, 7, 0];
+	setDate [2018, 12, 28, 7, 0];
 
 	[client_fnc_lottoRun, 3600] execFSM "\NoPixel_server\call.fsm";
 	[client_fnc_horseRace, 600] execFSM "\NoPixel_server\call.fsm";
