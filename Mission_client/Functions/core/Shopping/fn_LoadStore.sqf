@@ -13,16 +13,17 @@ if(_condition == "gunstore") then {
 
 		["vvv_fishing_rod",nil,120,1],
 
-		["RH_g17",nil,1200,1],
-		["bnae_L35_virtual",nil,1500,1],
-		["bnae_Colt_SAA_virtual",nil,1800,1],
-		["RH_usp",nil,1900,1],
-		["RH_m1911",nil,1900,1],
-		["RH_ttracker",nil,2100,1],
-		["RH_mp412",nil,1900,1],
-		["RH_python",nil,2100,1],
-		["RH_fn57",nil,3300,1],
-		["RH_gsh18",nil,3500,1]
+		["taser",nil,1200,1],
+		["RH_g17",nil,2200,1],
+		["bnae_L35_virtual",nil,2500,1],
+		["bnae_Colt_SAA_virtual",nil,2800,1],
+		["RH_usp",nil,2900,1],
+		["RH_m1911",nil,2900,1],
+		["RH_ttracker",nil,3100,1],
+		["RH_mp412",nil,3900,1],
+		["RH_python",nil,4100,1],
+		["RH_fn57",nil,4300,1],
+		["RH_gsh18",nil,4500,1]
 
 
 	];
