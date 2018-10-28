@@ -26,14 +26,12 @@ if(myJob == "Cop") then {
 		if(player getvariable "cop" >= 1) then { 
 			_garage pushback "VVV_Ford_CVPI_training";
 			_garage pushback "VVV_Ford_CVPI_black";
-			_garage pushback "Fox_CapriceLED_HWP";	
+			_garage pushback "Fox_Impala16LED";
+			_garage pushback "Fox_Taurus16LED_HWP";	
 		};
 		
 		if(player getvariable "cop" >= 3) then { 
-			_garage pushback "VVV_dodge_charger_pd";
-			_garage pushback "VVV_dodge_charger_highway";
-			_garage pushback "fox_Tahoe_PoliceHWP";
-			_garage pushback "Fox_Charger12";  	
+			_garage pushback "Fox_Charger16LED";  	
 		};
 		
 		if(player getvariable "cop" >= 5 && typeOf _house == "Land_PoliceStation") then { 
@@ -45,8 +43,10 @@ if(myJob == "Cop") then {
 
 	   
 		if(player getvariable "cop" >= 7) then { 
+			_garage pushback "VVV_dodge_charger_pd_su";
+			_garage pushback "VVV_dodge_charger_highway_su";
 			_garage pushback "VVV_dodge_charger_marshals_su";
-			_garage pushback "VVV_dodge_charger_marshals";	
+			_garage pushback "VVV_dodge_charger_marshals";
 		};
 		
 		 if(player getvariable "cop" >= 8) then { 
@@ -78,17 +78,16 @@ if(myJob == "Cop") then {
 		
 		if(player getvariable "cop" >= 1 && typeOf _house == "Land_PoliceStation") then {
 			_garage pushback "VVV_Ford_CVPI_training";
-			_garage pushback "VVV_Ford_CVPI_black";
-			_garage pushback "Fox_Impala16LED";		
+			_garage pushback "Fox_Impala16LED";	
+			_garage pushback "Fox_Taurus16LED_HWP";	
 		};
 		
 		if(player getvariable "cop" >= 3 && typeOf _house == "Land_PoliceStation") then {
-			_garage pushback "VVV_dodge_charger_pd";
-			_garage pushback "VVV_dodge_charger_highway";
-			_garage pushback "Fox_CapriceLED_HWP";
-			_garage pushback "fox_Tahoe_PoliceHWP";
-			_garage pushback "Fox_2015TahoeLED";
-			_garage pushback "Fox_Charger12";			
+			_garage pushback "Fox_Charger16LED";		
+		};
+
+		if(player getvariable "cop" >= 4 && typeOf _house == "Land_PoliceStation") then {
+			_garage pushback "Fox_2015TahoeLED";		
 		};
 
 		if(player getvariable "cop" >= 5 && typeOf _house == "Land_PoliceStation") then { 
@@ -105,14 +104,7 @@ if(myJob == "Cop") then {
 		};
 
 		if(player getvariable "cop" >= 6 && typeOf _house == "Land_PoliceStation") then {
-			_garage pushback "VVV_DodgeDurango_police";
-			_garage pushback "VVV_DodgeDurango_highway";
 			_garage pushback "Fox_Explorer16LED_SH";
-			_garage pushback "Fox_Charger16LED";
-			_garage pushback "VVV_dodge_charger_pd_su";
-			_garage pushback "VVV_dodge_charger_highway_su";
-			_garage pushback "VVV_dodge_charger_marshals_su";
-			_garage pushback "VVV_dodge_charger_marshals";
 		};
 
 		if(player getvariable "cop" == 10 && typeOf _house == "Land_PoliceStation") then { 
