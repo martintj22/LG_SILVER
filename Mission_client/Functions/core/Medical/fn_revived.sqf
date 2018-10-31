@@ -19,7 +19,7 @@ if(deadPhase == 2) then {
 
 sleep 1;
 deadphase = 0;
-player say "defib";
+playSound3D ["cg_mission_files\dispatch\mdciv.ogg", cursortarget, false, getPosASL player, 1, 1, 125];
 player setVariable ["tf_voiceVolume", 1, true];
 inGameUISetEventHandler ["Action", ""];
 
