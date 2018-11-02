@@ -4,6 +4,7 @@ im_dead = false;
 closedialog 0;
 detach player;
 ["set",0.25] call Client_Fnc_DoHealth;
+playSound3D ["cg_mission_files\sounds\defib.ogg", cursortarget, false, getPosASL player, 1, 1, 125];
 
 if(deadPhase == 1) then {
 
@@ -19,7 +20,6 @@ if(deadPhase == 2) then {
 
 sleep 1;
 deadphase = 0;
-playSound3D ["cg_mission_files\sounds\defib.ogg", cursortarget, false, getPosASL player, 1, 1, 125];
 player setVariable ["tf_voiceVolume", 1, true];
 inGameUISetEventHandler ["Action", ""];
 
